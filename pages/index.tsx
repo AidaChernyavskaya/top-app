@@ -1,11 +1,11 @@
-import React from 'react';
-import {Button, Htag, Ptag, Tag} from '../components';
+import React, {useEffect, useState} from 'react';
+import {Button, Htag, Ptag, Rating, Tag} from '../components';
 
 
 export default function Home(): JSX.Element {
-  return (
+    return (
     <>
-        <Htag tag = 'h1'>Текст</Htag>
+        <Htag tag = 'h1'>Заголовок</Htag>
         <Button appearance={'primary'} arrow={'right'}>Кнопка</Button>
         <Button appearance={'ghost'} arrow={'down'}>Кнопка</Button>
         <Ptag size={'l'}>Большой</Ptag>
@@ -15,6 +15,7 @@ export default function Home(): JSX.Element {
         <Tag size={'m'} color={'red'}>Red</Tag>
         <Tag size={'s'} color={'green'}>Green</Tag>
         <Tag size={'s'} color={'primary'}>Primary</Tag>
+        <Rating rating={4}></Rating>
     </>
   );
 }
