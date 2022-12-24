@@ -43,9 +43,11 @@ export const Menu = (): JSX.Element => {
     };
 
     const buildSecondLevel = (menuItem: FirstLevelMenuItem) => {
+        console.log(menuItem, menu);
         return (
             <div className={styles.secondBlock}>
                 {menu.map(m => {
+                    console.log(m);
                     if (m.pages.map(p => p.alias).includes((router.asPath.split('/')[2]))) {
                         m.isOpened = true;
                     }
