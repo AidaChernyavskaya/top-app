@@ -4,7 +4,7 @@
 		". header header ."
 		". sidebar body ."
 		"footer footer footer footer";
-	grid-template-columns: auto 230px minmax(320px, 1200px) auto;
+	grid-template-columns: auto 280px minmax(320px, 1200px) auto;
 	grid-template-rows: auto 1fr auto;
 	min-height: 100vh;
 	gap: 40px 30px;
@@ -27,7 +27,7 @@
 	grid-area: footer;
 }
 
-@media (max-width: 875px) {
+@media (max-width: 950px) {
 	.wrapper {
 		grid-template-areas:
 			"header"
