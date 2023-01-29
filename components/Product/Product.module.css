@@ -144,14 +144,18 @@
 }
 
 .closed {
-	overflow: hidden;
 	max-height: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 .opened {
 	max-height: auto;
 	padding: 30px;
+}
+
+.rateTitle a {
+	color: var(--primary);
 }
 
 @media screen and (max-width: 1352px) {
@@ -286,8 +290,8 @@
 	}
 
 	.reviewButton {
-		margin-left: 0px;
-		margin-top: 20px;
 		display: flex;
+		margin-top: 20px;
+		margin-left: 0;
 	}
 }
