@@ -284,4 +284,10 @@
 			"actions";
 		grid-template-columns: 1fr;
 	}
+
+	.reviewButton {
+		margin-left: 0px;
+		margin-top: 20px;
+		display: flex;
+	}
 }
